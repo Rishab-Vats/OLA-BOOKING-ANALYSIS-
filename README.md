@@ -515,8 +515,6 @@ These extensions could take the project from descriptive business analysis towar
 
 **Dataset Size:** 103,024 Records
 
-**Analysis Period:** July 2024
-
 **Business Problem Areas Investigated:** 6
 
 **Analytical Scope Coverage:** 100%
