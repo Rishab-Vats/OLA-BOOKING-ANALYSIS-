@@ -473,34 +473,6 @@ During the analysis, several data characteristics were important to consider.
 
 The three failure categories are mutually exclusive in the supplied booking-status data. The overall cancellation rate of 28.08% includes driver and customer cancellations but excludes Driver Not Found bookings.
 
----
-
-# 📁 Project Repository Structure
-
-```text
-OLA-Business-Performance-Analysis/
-│
-├── Dataset/
-│   └── olaBookings_SQL_ready.csv
-│
-├── Excel/
-│   └── OLA_Bookings_Analysis.xlsx
-│
-├── SQL/
-│   └── OLA_Bookings_Analysis.sql
-│
-├── PowerBI/
-│   └── OLA_Bookings_Dashboard.pbix
-│
-├── Dashboard_Screenshots/
-│   ├── Overview.png
-│   ├── Revenue.png
-│   ├── Cancellation.png
-│   └── Demand_and_Planning.png
-│
-└── README.md
-```
-
 # 📚 Key Learnings
 
 This project helped me understand how data analytics can be used to investigate operational and financial challenges rather than simply report business numbers.
