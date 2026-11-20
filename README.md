@@ -359,7 +359,7 @@ This page provides an overall view of the business through six primary KPIs.
 
 ## Page 2 — Revenue & Vehicle Performance
 
-![Revenue Dashboard](Dashboard_Screenshots/Revenue.png)
+![Revenue Dashboard](ola%20Dashboard/Revenue.png)
 
 This page focuses on financial performance and vehicle-level comparisons.
 
@@ -374,7 +374,7 @@ This page focuses on financial performance and vehicle-level comparisons.
 
 ## Page 3 — Cancellation & Lost Revenue Analysis
 
-![Cancellation Dashboard](Dashboard_Screenshots/Cancellation.png)
+![Cancellation Dashboard](ola%20Dashboard/Cancels.png)
 
 This page investigates unsuccessful bookings and their associated financial exposure.
 
@@ -389,7 +389,7 @@ This page investigates unsuccessful bookings and their associated financial expo
 
 ## Page 4 — Demand & Supply Planning
 
-![Demand and Supply Dashboard](Dashboard_Screenshots/Demand_and_Planning.png)
+![Demand and Supply Dashboard](ola%20Dashboard/Demand%20and%20Planning.png)
 
 This page focuses on location-level and time-based demand patterns.
 
