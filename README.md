@@ -1,9 +1,6 @@
 # 🚖 OLA Business Performance & Operational Analytics
 ### An End-to-End Data Analytics Project Using Excel, MySQL & Power BI
 
-![Excel](olaBookings_Raw_data.csv)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Power BI](Ola Dashboard.pbix)
 
 
 ## 📌 Project Overview
