@@ -336,7 +336,7 @@ The final dashboard is divided into four pages, with each page designed around a
 
 ## Page 1 — Executive Overview
 
-![Executive Overview](ola Dashboard/Overview.png)
+![Executive Overview](olaDashboard/Overview.png)
 
 This page provides an overall view of the business through six primary KPIs.
 
