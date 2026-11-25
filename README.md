@@ -87,10 +87,10 @@ Key activities:
 
 ### MySQL — Data Querying & Business Analysis
 
-MySQL was used to investigate the dataset through structured queries and answer business-related questions.
+MySQL was used to investigate the dataset through structured queries (`ola_booking_analysis_queries.sql`) and answer business-related questions.
 
 Key activities:
-- Importing the CSV dataset into MySQL.
+- Creating the `ola_analytics.ola_bookings_raw` table and loading `103,024` records via `LOAD DATA LOCAL INFILE` with `NULLIF(..., '')` to handle blank values cleanly.
 - Understanding data structure and column behaviour.
 - SELECT, WHERE, ORDER BY, and GROUP BY.
 - Aggregate functions and conditional calculations.
@@ -114,6 +114,42 @@ Key activities:
 - Geographical demand and failure analysis.
 - Heatmaps, funnel charts, waterfall charts, and treemaps.
 - Dashboard navigation and visual formatting.
+
+---
+
+## 🧩 SQL Business Questions Solved (`ola_booking_analysis_queries.sql`)
+
+Here are the 20 business questions solved in MySQL across the dataset:
+
+### 1. Bookings & Revenue Basics
+- **#Q1.** How many total bookings were recorded in July 2024, and what is the count and total `Booking_Value` for each `Booking_Status` (`Success`, `Canceled by Driver`, `Canceled by Customer`, `Driver Not Found`)?
+- **#Q2.** What is the total realized revenue (`Booking_Status = 'Success'`) compared to the total value of unsuccessful bookings?
+- **#Q3.** What are the minimum, average, and maximum `Booking_Value` for successful rides versus canceled rides?
+- **#Q4.** Which 10 dates in July 2024 recorded the highest number of bookings and the highest realized revenue?
+
+### 2. Vehicle Categories & Payment Modes
+- **#Q5.** How do `Success` ride counts, total `Booking_Value`, and average `Ride_Distance` compare across all 7 `Vehicle_Type` categories?
+- **#Q6.** Which `Vehicle_Type` has the highest count of `Canceled by Driver` and `Driver Not Found` bookings?
+- **#Q7.** How many completed rides were paid via `Cash`, `UPI`, `Credit Card`, and `Debit Card`, and what is the total revenue for each payment method?
+- **#Q8.** For each `Vehicle_Type`, which `Payment_Method` is used the most for successful rides?
+
+### 3. Cancellations & Incomplete Rides
+- **#Q9.** How many bookings fall under each `Canceled_Rides_by_Driver` reason, and what is the total `Booking_Value` tied to each reason?
+- **#Q10.** How many bookings fall under each `Canceled_Rides_by_Customer` reason, and which reason happens the most?
+- **#Q11.** Among `Success` bookings, how many rides have `Incomplete_Rides = 'Yes'` versus `'No'`?
+- **#Q12.** For incomplete rides (`Incomplete_Rides = 'Yes'`), how many occur under each `Incomplete_Rides_Reason` (`Customer Demand`, `Vehicle Breakdown`, `Other Issue`), and which `Vehicle_Type` has the most incomplete rides?
+
+### 4. Locations & Routes
+- **#Q13.** Which are the top 10 `Pickup_Location` areas by total bookings, successful rides, and `Driver Not Found` count?
+- **#Q14.** Which are the top 10 `Drop_Location` areas for completed rides?
+- **#Q15.** Which specific `Pickup_Location` to `Drop_Location` routes have the highest number of completed rides and highest realized revenue?
+- **#Q16.** How many bookings have `Pickup_Location = Drop_Location`, and how many of them were `Success` vs. canceled?
+
+### 5. Time, Distance, TAT & Ratings
+- **#Q17.** How do total bookings and successful rides change across each hour of the day (`0` to `23`)?
+- **#Q18.** How do average `Ride_Distance` and average `Booking_Value` compare across short (`<= 10 km`), medium (`11–25 km`), and long (`> 25 km`) completed trips?
+- **#Q19.** What is the average `V_TAT` and `C_TAT` for successful rides across each `Vehicle_Type`?
+- **#Q20.** What are the average `Driver_Ratings` and `Customer_Rating` for each `Vehicle_Type` on completed rides?
 
 ---
 
